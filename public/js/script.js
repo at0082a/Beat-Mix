@@ -1,12 +1,11 @@
 // Drum Arrays
-let kicks = [ false, false, false, false, false, false, false, false, 
-            false, false, false, false, false, false, false, false ];
-let snares = [ false, false, false, false, false, false, false, false, 
-              false, false, false, false, false, false, false, false ];
-let hiHats = [ false, false, false, false, false, false, false, false, 
-              false, false, false, false, false, false, false, false ];
-let rideCymbals = [ false, false, false, false, false, false, false, false, 
-                    false, false, false, false, false, false, false, false ];
+const createEmptyDrumArray = () => new Array(16).fill(false);
+
+// Drum Arrays
+let kicks = createEmptyDrumArray();
+let snares = createEmptyDrumArray();
+let hiHats = createEmptyDrumArray();
+let rideCymbals = createEmptyDrumArray();
 
 function toggleDrum (array, index) {
   for (let i = 0; i < array.length; i++) {
